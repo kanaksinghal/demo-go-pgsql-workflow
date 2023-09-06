@@ -9,6 +9,4 @@ compute:
 
 dependencies:
   - id: ledgerdb
-    use: postgres
-    inputs:
-      version: "11.20"
+    use: mongodb
