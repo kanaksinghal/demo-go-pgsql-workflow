@@ -12,3 +12,5 @@ dependencies:
     use: postgres
     inputs:
       version: "11.20"
+  - id: cachedb
+    use: redis
