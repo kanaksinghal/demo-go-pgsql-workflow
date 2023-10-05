@@ -53,7 +53,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: terrarium-generate-code
-          path: ${{ env.TF_CONFIG_DIRECTORY }}
           branch: ${{ github.head_ref || github.ref_name }}
           commit_user_name: Akash Jaiswal # defaults to "github-actions[bot]"
           commit_user_email: akahsh.jaiswal@cldcvr.com # defaults to "41898282+github-actions[bot]@users.noreply.github.com"
