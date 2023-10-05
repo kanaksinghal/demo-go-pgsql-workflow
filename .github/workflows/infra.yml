@@ -63,9 +63,12 @@ jobs:
       contents: read
       pull-requests: write
     steps:
-      - name: "Push Terrarium generated code at path : ${{ env.TF_CONFIG_DIRECTORY }}"
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: terrarium-generate-code
-          path: ${{ env.TF_CONFIG_DIRECTORY }}
-          branch: ${{ github.ref_name }}
+      - name: Commit files
+        id: commit
+        run: |
+          git config --local user.email "akash.jaiswal@cldcvr.com"
+          git config --local user.name "Akash Jaiswal"
+          git add --all
+          git commit -m "Push Terrarium generated code" -a
+          git push -u origin $GITHUB_REF 
+          SHA=$(git rev-parse HEAD)
