@@ -2,9 +2,7 @@ name: 'Infra'
 
 on:
   pull_request:
-  push:
-    branches:
-      - main
+
 
 env:
   PLATFORM_REPO: "cldcvr/terrarium"
