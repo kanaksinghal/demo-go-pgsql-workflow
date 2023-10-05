@@ -55,4 +55,4 @@ jobs:
           path: ${{ env.TF_CONFIG_DIRECTORY }}
           branch: "akashj/demo"
           commit_user_name: Akash Jaiswal # defaults to "github-actions[bot]"
-          commit_user_email: akahsh.jaiswal@cldcrv.com # defaults to "41898282+github-actions[bot]@users.noreply.github.com"
+          commit_user_email: akahsh.jaiswal@cldcvr.com # defaults to "41898282+github-actions[bot]@users.noreply.github.com"
