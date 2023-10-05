@@ -66,6 +66,7 @@ jobs:
       - name: Commit files
         id: commit
         run: |
+          ls -la
           git config --local user.email "akash.jaiswal@cldcvr.com"
           git config --local user.name "Akash Jaiswal"
           git add --all
