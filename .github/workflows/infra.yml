@@ -8,13 +8,14 @@ on:
 
 env:
   PLATFORM_REPO: "cldcvr/terrarium"
-  PLATFORM_BRANCH: "shwetanshu/TER-89"
+  PLATFORM_BRANCH: "main"
   PLATFORM_DIR: "examples/platform-demo/platform"
-  TERRARIUM_VERSION: "v0.2"
+  TERRARIUM_VERSION: "v0.6"
   TF_API_TOKEN: "${{ secrets.TF_API_TOKEN }}"
   TF_CLOUD_ORGANIZATION: "kanak"
   TF_WORKSPACE: "demo-go-pgsql-workflow"
   TF_CONFIG_DIRECTORY: "./.terrarium-output"
+
 
 jobs:
   t8-generate:
@@ -68,4 +69,3 @@ jobs:
           commit_message: terrarium-generate-code
           path: ${{ env.TF_CONFIG_DIRECTORY }}
           branch: ${{ github.ref_name }}
-
