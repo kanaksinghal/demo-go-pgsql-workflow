@@ -48,12 +48,10 @@ jobs:
           terrarium generate -p .platform-repo/$PLATFORM_DIR -a . -o $TF_CONFIG_DIRECTORY/src
           cp -r .platform-repo/examples/platform-demo/modules ./$TF_CONFIG_DIRECTORY/modules
 
-
       - name: "Push Terrarium generated code at path : ${{ env.TF_CONFIG_DIRECTORY }}"
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: terrarium-generate-code
           branch: ${{ github.head_ref || github.ref_name }}
-
 
 
