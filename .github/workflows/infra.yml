@@ -53,4 +53,4 @@ jobs:
         with:
           commit_message: terrarium-generate-code
           path: ${{ env.TF_CONFIG_DIRECTORY }}
-          branch: ${{ github.ref_name }}
+          branch: "akashj/demo"
