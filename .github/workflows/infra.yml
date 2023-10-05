@@ -50,6 +50,7 @@ jobs:
           cp -r .platform-repo/examples/platform-demo/modules $TF_CONFIG_DIRECTORY/modules
           rm -rf .platform-repo
 
+
       - name: "Push Terrarium generated code at path : ${{ env.TF_CONFIG_DIRECTORY }}"
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
